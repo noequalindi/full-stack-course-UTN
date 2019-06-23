@@ -1,0 +1,99 @@
+body {
+    background-color: #282c34;
+    position: static;
+}
+.form {
+    padding:20px;
+    list-style:none;
+    width: 25%;
+    margin:auto;
+    font-size:0.9rem;
+    line-height: 1rem;
+    background-color: #f2f2f2;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+
+}
+.container {
+    border-radius: 5px;
+    background-color: #282c34;
+    padding: 10px;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto;
+    padding: 10px;
+    font-size:2.0rem;
+    line-height: 1rem;
+    float: left;
+}
+
+input {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:1rem;
+    margin: auto;
+    width: 14rem;
+}
+
+.button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:1rem;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: 200;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: #088A68;
+    border-radius: 3px;
+    border: 2px solid #61dafb;
+} 
+
+.ob { color: red}
+.col-input {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+.col-label {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+label {
+padding: 10px 10px 10px 0;
+display: inline-block;
+
+}
+
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  input[type=submit] {
+    background-color: #088A68;
+    border: 1px solid #088A68;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+  }
+  input[type=submit]:hover {
+    color: #088A68;
+    background-color: #ffffff;
+    border: 1px solid #088A68;
+}

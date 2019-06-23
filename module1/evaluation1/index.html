@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Evaluacion 1 - Formulario</title>
+    <script src="js.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="form">
+	<form action="form" method="get" onSubmit="return validate_fields()">
+       
+        <h1>Formulario</h1>
+        
+        <div class="col-input">
+            <label>Nombre <span class="ob">*</span></label> 
+        </div>
+        <div class="col-input">
+            <input type="text" name="nombre" id="name" /> <br />
+        </div>
+
+        <div class="col-input">
+            <label>Apellido <span class="ob">*</span></label> 
+        </div>
+        <div class="col-input">
+            <input type="text" name="apellido" id="lastname" /> <br />
+        </div>
+        <div class="col-input">
+            <label>Email <span class="ob">*</span></label> 
+        </div>
+        <div class="col-input">
+            <input type="text" name="email" id="email" /> <br />
+        </div>
+        <div class="col-input">
+            <label>Teléfono</label></div>
+        <div class="col-input">
+            <input type="text" name="telefono" id="phone"> <br/>
+        </div>
+        <div class="col-input">
+            <label>Fecha de Nacimiento <span class="ob">*</span></label>
+        </div>
+        <div class="col-input">
+            <input type="text" name="fecha" id="date"><br/>
+        </div>
+        <div class="col-input">
+            <label>Nombre de usuario <span class="ob">*</span></label></div>
+        <div class="col-input">
+            <input type="text" name="usuario" id="user"><br/>
+        </div>
+        <div class="col-input">
+            <label>Contraseña <span class="ob">*</span></label></div>   
+        <div class="col-input">
+            <input type="password" name="contraseña" id="pass" /> <br />
+        </div>
+        <div class="col-input">
+            <p><span class="ob">(*)</span> Campos obligatorios</p>
+        </div>
+        <div class="row">
+            <input type="submit" value="Enviar formulario" />
+        </div>
+        </div>
+    </form>
+    </div>
+</div>
+</body>
+</html>
