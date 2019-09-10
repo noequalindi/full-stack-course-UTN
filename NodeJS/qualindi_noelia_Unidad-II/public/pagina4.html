@@ -9,24 +9,27 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+  <script type="text/javascript" src="../index.js"></script>
 </head>
 <body>
   <div class="container">
-      <h1 class="brand"><span>Contact</span>Contact Form</h1>
+      <h1 class="brand"><span>UTN </span>Contact Form</h1>
 
       <ul class="nav nav-pills nav-fill">
+          <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
           <li class="nav-item">
             <a class="nav-link active" href="pagina1.html">Page Static 1</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pagina2.html">Page Static 2</a>
+            <a class="nav-link active" href="pagina2.html">Page Static 2</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pagina3.html">Page Static 3</a>
+            <a class="nav-link active" href="pagina3.html">Page Static 3</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pagina4.html">Contact Form!</a>
+            <a class="nav-link active" href="pagina4.html">Contact Form!</a>
           </li>
         </ul>
       
@@ -34,37 +37,36 @@
       <div class="company-info">
         <h3>Evaluacion Unidad II</h3>
         <ul>
-          <li><i class="fa fa-road"></i> 44 Something st</li>
-          <li><i class="fa fa-phone"></i> (555) 555-5555</li>
-          <li><i class="fa fa-envelope"></i> test@acme.test</li>
+          <li><i class="fa fa-road"></i> 44 Something </li>
+          <li><i class="fa fa-phone"></i> (54) 555-5555</li>
+          <li><i class="fa fa-envelope"></i> test@utn.test</li>
         </ul>
       </div>
       <div class="contact">
-        <h3>Email Us</h3>
-        {{msg}}
+        <h3>Contactanos!</h3>
         <form method="POST" action="/send">
           <p>
-            <label>Name</label>
+            <label>Nombre</label>
             <input type="text" name="name">
           </p>
           <p>
-            <label>Company</label>
+            <label>Empresa</label>
             <input type="text" name="company">
           </p>
           <p>
-            <label>Email Address</label>
+            <label>Email</label>
             <input type="email" name="email">
           </p>
           <p>
-            <label>Phone Number</label>
+            <label>Teléfono</label>
             <input type="text" name="phone">
           </p>
           <p class="full">
-            <label>Message</label>
+            <label>Mensaje</label>
             <textarea name="message" rows="5"></textarea>
           </p>
           <p class="full">
-            <button type="submit">Submit</button>
+            <button type="submit">Enviar</button>
           </p>
         </form>
       </div>
