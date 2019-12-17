@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+<form [formGroup]="form" (ngSubmit)="contacto()">
+  <div class="form-group">
+    <label for="">Nombre</label>
+    <input type="text" class="form-control" formControlName="nombre"
+    [ngClass]="{
+        error:form.get('nombre').hasError('required')&&form.get('nombre').dirty,
+        warning:form.get('nombre').hasError('minlength')&&form.get('nombre').dirty
+    }">
+  </div>
+  <div *ngIf="form.get('nombre').errors && form.get('nombre').dirty">
+    <p *ngIf="form.get('nombre').hasError('required')">Campo obligatorio</p>
+    <p *ngIf="form.get('nombre').hasError('minlength')">La cantidad minima de caracteres es 4</p>
+  </div>
+  <div class="form-group">
+    <label for="">Apellido</label>
+      <input type="text" formControlName="apellido" class="form-control">
+      
+  </div>
+  <div *ngIf="form.get('apellido').errors && form.get('apellido').dirty">
+    <p *ngIf="form.get('apellido').hasError('required')">El campos es obligatorio</p>
+    <p *ngIf="form.get('apellido').hasError('minlength')">La cantidad minima de caracteres es 4</p>
+  </div>
+
+  <div class="form-group">
+    <label for="">Email</label>
+    <input type="text" formControlName="email" class="form-control">
+  </div>
+  <div *ngIf="form.get('email').errors && form.get('email').dirty">
+    <p *ngIf="form.get('email').hasError('required')">El campos es obligatorio</p>
+    <p *ngIf="form.get('email').hasError('minlength')">La cantidad minima de caracteres es 4</p>
+  </div>
+  <div class="form-group">
+    <label for="">Descripcion</label>
+    <textarea class="form-control" id="" rows="3"></textarea>
+  </div>
+  <div *ngIf="form.get('descripcion').errors && form.get('descripcion').dirty">
+      <p *ngIf="form.get('descripcion').hasError('required')">El campos es obligatorio</p>
+      <p *ngIf="form.get('descripcion').hasError('minlength')">La cantidad minima de caracteres es 4</p>
+    </div>
+    <div>
+      <input class="form-control" type="submit" value="Contactarse" [disabled]="form.invalid">
+    </div>
+</form>
+</div>
+</div>
+</div>

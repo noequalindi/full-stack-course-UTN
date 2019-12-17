@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Billetera",
+    "description": "Billetera de cuero negro",
+    "reference": "REF-005",
+    "status": "inactive",
+    "img": "assets/billetera.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Cartera",
+    "description": "Cartera de cuero color café",
+    "reference": "CAR-195",
+    "status": "active",
+    "img": "assets/cartera.jpg"
+    
+  },
+  {
+    "id": "3",
+    "name": "Vinos Bodega Sur",
+    "description": "Vino blanco y tinto de Bodega Sur",
+    "isDefault": false,
+    "address": null,
+    "status": "active",
+    "img": "assets/vino.jpg"
+    },
+  {
+    "id": 3,
+    "name": "Diseño de monedero ",
+    "description": "Diseño de monedero en cuero.",
+    "reference": "",
+    "status": "active",
+    "img": "assets/monedero.jpg"
+
+  }
+]

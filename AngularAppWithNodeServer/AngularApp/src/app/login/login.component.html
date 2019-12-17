@@ -1,0 +1,25 @@
+<div>
+  <form [formGroup]="form" (ngSubmit)="login()">
+    <div>
+      <label for="">Usuario</label>
+      <input type="text" formControlName="usuario">
+    </div>
+    <div *ngIf="form.get('usuario').errors && form.get('usuario').dirty">
+      <p *ngIf="form.get('usuario').hasError('required')">El campos es obligatorio</p>
+      <p *ngIf="form.get('usuario').hasError('minlength')">La cantidad minima de caracteres es 4</p>
+    </div>
+    
+    <div>
+      <label for="">Contraseña</label>
+      <input type="text" formControlName="password" type="password">
+    </div>
+    <div *ngIf="form.get('password').errors && form.get('password').dirty">
+      <p *ngIf="form.get('password').hasError('required')">El campos es obligatorio</p>
+      <p *ngIf="form.get('password').hasError('minlength')">La cantidad minima de caracteres es 4</p>
+    </div>
+    
+    <div>
+      <input type="submit" value="Contactarse" [disabled]="form.invalid">
+    </div>
+  </form>
+</div>

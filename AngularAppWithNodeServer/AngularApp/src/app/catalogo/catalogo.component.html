@@ -1,0 +1,16 @@
+
+<div class="container">
+    <div class="row">
+  
+<div class="card" style="width: 18rem; display: inline-block; margin: 10px; float: left; align-items: center" *ngFor="let producto of productos">
+    <img class="card-img-top" [src]="producto.img" alt="Imagen del producto">
+    <div class="card-body">
+      <h5 class="card-title">{{producto.name}}</h5>
+      <p class="card-text"> {{producto.description}}</p>
+      <p class="card-text"> {{producto.reference}}</p>
+      <p class="card-text"> {{producto.status}}</p>
+      <a href="#" class="btn btn-primary" routerLink="/producto/{{producto.id}}">Ver mas</a>
+    </div>
+  </div>
+</div>
+  </div>
